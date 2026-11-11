@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edininja 项目预览</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1d1d1b; --muted: #6b6b66; --card: #ffffff; --line: #e4e4df; --accent: #b3261e;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151514; --fg: #ececea; --muted: #9a9a94; --card: #1f1f1d; --line: #33332f; --accent: #ff8a80; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 32px; font-size: 14px; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  a.card {
+    display: block; padding: 16px 18px; background: var(--card); border: 1px solid var(--line);
+    border-radius: 12px; color: inherit; text-decoration: none;
+  }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); }
+  .name { font-weight: 600; }
+  .path { color: var(--muted); font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .desc { margin-top: 4px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>项目预览</h1>
+  <p class="sub">每个项目在自己的子路径下。</p>
+  <ul>
+    <li>
+      <a class="card" href="/atlas-photo-studio/">
+        <div class="name">atlas-photo-studio</div>
+        <div class="path">/atlas-photo-studio/</div>
+        <div class="desc">旅行地图海报网页原型</div>
+      </a>
+    </li>
+  </ul>
+</main>
+</body>
+</html>
